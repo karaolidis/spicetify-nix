@@ -24,6 +24,8 @@ buildGoModule {
     "-X 'main.version=Dev'"
   ];
 
+  patches = [ ./user-colors.patch ];
+
   postInstall = ''
     mv $out/bin/cli $out/bin/spicetify
     ln -s $src/jsHelper $out/bin/jsHelper
