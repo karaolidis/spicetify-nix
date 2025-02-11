@@ -17,6 +17,8 @@ buildGoModule {
     hash = "sha256-vqif3oLDm9SUrkY+qEYHUEmHN+psoK6GNUB+kA6sQ4Q=";
   };
 
+  patches = [ ./user-colors.patch ];
+
   vendorHash = "sha256-3U/qV81UXS/Xh3K6OnMUyRKeMSBQUHLP64EOQl6TfMY=";
 
   ldflags = [
